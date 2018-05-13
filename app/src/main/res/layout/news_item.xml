@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_listview"
+    android:padding="@dimen/padding_NT">
+
+    <TextView
+        android:id="@+id/section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/TextView_margin_NT"
+        android:layout_marginStart="@dimen/TextView_margin_NT"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/sectionColor"
+        android:textSize="@dimen/TextSize_13sp"
+        android:textStyle="bold"
+        tools:text="Section" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/TextView_margin_NT"
+        android:layout_marginStart="@dimen/TextView_margin_NT"
+        android:layout_marginTop="@dimen/TextView_margin_NT"
+        android:textSize="@dimen/TextSize_16sp"
+        android:textStyle="bold"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/TextView_marginT_NT"
+        android:textSize="@dimen/TextSize_13sp"
+        tools:text="Date" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/date"
+        android:layout_marginEnd="@dimen/TextView3_margin_NT"
+        android:layout_marginRight="@dimen/TextView3_margin_NT"
+        android:textSize="@dimen/TextSize_13sp"
+        tools:text="Author" />
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TextView_padding">20dp</dimen>
+    <dimen name="TextView_marginTop">150dp</dimen>
+    <dimen name="TextView_margin">40dp</dimen>
+    <dimen name="TextSize_18sp">18sp</dimen>
+    <dimen name="TextSize_16sp">16sp</dimen>
+    <dimen name="TextView_margin_NT">37dp</dimen>
+    <dimen name="padding_NT">7dp</dimen>
+    <dimen name="TextView_marginT_NT">96dp</dimen>
+    <dimen name="TextSize_13sp">13sp</dimen>
+    <dimen name="TextView3_margin_NT">66dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="radius">5dp</dimen>
+    <dimen name="shape_padding">3dp</dimen>
+</resources>

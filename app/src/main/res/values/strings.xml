@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">News1</string>
+    <string name="ErrorMessage">Error: Connection not established!</string>
+    <string name="TryAgainMessage">Try again when you have connection</string>
+</resources>
