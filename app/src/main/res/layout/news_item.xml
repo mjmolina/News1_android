@@ -13,7 +13,7 @@
         android:layout_gravity="center"
         android:layout_marginLeft="@dimen/TextView_margin_NT"
         android:layout_marginStart="@dimen/TextView_margin_NT"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/TextView_marginT"
         android:textColor="@color/sectionColor"
         android:textSize="@dimen/TextSize_13sp"
         android:textStyle="bold"
@@ -35,25 +35,25 @@
         android:id="@+id/date"
         android:layout_width="90dp"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/section"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/section"
         android:layout_gravity="center"
-        android:layout_marginTop="95dp"
+        android:layout_marginTop="@dimen/TextView_marginT2"
         android:textSize="@dimen/TextSize_13sp"
-        tools:text="Date"
-        android:layout_alignLeft="@+id/section" />
+        tools:text="Date" />
 
     <TextView
         android:id="@+id/author"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="@dimen/TextView_marginLR"
+        android:layout_marginRight="@dimen/TextView_marginLR"
+        android:layout_marginTop="@dimen/TextView_marginT3"
+        android:gravity="end"
         android:textAlignment="viewEnd"
-        android:layout_marginTop="134dp"
         android:textSize="@dimen/TextSize_13sp"
-        tools:text="Author"
-        android:gravity="end" />
+        tools:text="Author" />
 
 
 </RelativeLayout>

@@ -13,4 +13,8 @@
     <dimen name="stroke_width">1dp</dimen>
     <dimen name="radius">5dp</dimen>
     <dimen name="shape_padding">3dp</dimen>
+    <dimen name="TextView_marginT">10dp</dimen>
+    <dimen name="TextView_marginT2">95dp</dimen>
+    <dimen name="TextView_marginLR">15dp</dimen>
+    <dimen name="TextView_marginT3">134dp</dimen>
 </resources>
