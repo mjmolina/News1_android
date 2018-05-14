@@ -90,10 +90,10 @@ public class NewsAdapter extends BaseAdapter {
         }
 
         try {
-            webTitle = finalObject.getString("webTitle");
-            webPublicationDate = finalObject.getString("webPublicationDate");
-            sectionName = finalObject.getString("sectionName");
-            webUrl = finalObject.getString("webUrl");
+            webTitle = finalObject.optString("webTitle");
+            webPublicationDate = finalObject.optString("webPublicationDate");
+            sectionName = finalObject.optString("sectionName");
+            webUrl = finalObject.optString("webUrl");
 
             //Extract the JSONArray with the key "tag"
             JSONArray tagsArray = finalObject.getJSONArray("tags");
@@ -101,9 +101,8 @@ public class NewsAdapter extends BaseAdapter {
             // Check if tag array has some content
             if (tagsArray.length() == 1) {
                 JSONObject contributorTag = (JSONObject) tagsArray.get(0);
-                // The author name field is inside the tag webTitle
-                // from the array Tags
-                webAuthor = contributorTag.getString("webTitle");
+                // The author name field is inside the tag webTitle from the array Tags
+                webAuthor = contributorTag.optString("webTitle");
             }
 
         } catch (JSONException e) {
@@ -118,27 +117,34 @@ public class NewsAdapter extends BaseAdapter {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        DateFormat df = new SimpleDateFormat("dd MMM yyyy HH:mm");
         String reportDate = df.format(D);
 
-        // check if sectionName is the selected sectionName to filter
-        // the news out
-        // Setting the text into the TextViews
-        title.setText(webTitle);
-        date.setText(reportDate);
-        section.setText(sectionName);
-        author.setText(webAuthor);
+        if (webTitle != null) {
+            title.setText(webTitle);
+        }
+        if (reportDate != null) {
+            date.setText(reportDate);
+        }
+        if (sectionName != null) {
+            section.setText(sectionName);
+        }
+        if (webAuthor != null) {
+            author.setText(webAuthor);
+        }
 
-        // Adding an OnClickListener so once the user click on the news (the whole item)
-        // it will open the news URL
-        final String finalWebUrl = webUrl;
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(finalWebUrl));
-                context.startActivity(i);
-            }
-        });
+        if (webUrl != null) {
+            // Adding an OnClickListener so once the user click on the news (the whole item)
+            // it will open the news URL
+            final String finalWebUrl = webUrl;
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(finalWebUrl));
+                    context.startActivity(i);
+                }
+            });
+        }
 
         return view;
     }

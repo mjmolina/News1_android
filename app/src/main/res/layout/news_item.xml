@@ -33,26 +33,27 @@
 
     <TextView
         android:id="@+id/date"
-        android:layout_width="wrap_content"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/title"
-        android:layout_alignStart="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/section"
         android:layout_gravity="center"
-        android:layout_marginTop="@dimen/TextView_marginT_NT"
+        android:layout_marginTop="95dp"
         android:textSize="@dimen/TextSize_13sp"
-        tools:text="Date" />
+        tools:text="Date"
+        android:layout_alignLeft="@+id/section" />
 
     <TextView
         android:id="@+id/author"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/date"
-        android:layout_marginEnd="@dimen/TextView3_margin_NT"
-        android:layout_marginRight="@dimen/TextView3_margin_NT"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textAlignment="viewEnd"
+        android:layout_marginTop="134dp"
         android:textSize="@dimen/TextSize_13sp"
-        tools:text="Author" />
+        tools:text="Author"
+        android:gravity="end" />
 
 
 </RelativeLayout>

@@ -15,7 +15,6 @@
         android:layout_marginEnd="@dimen/TextView_margin"
         android:layout_marginRight="@dimen/TextView_margin"
         android:layout_marginStart="@dimen/TextView_margin"
-        android:text="@string/ErrorMessage"
         android:textSize="@dimen/TextSize_18sp"
         android:textStyle="bold" />
 
@@ -27,6 +26,5 @@
         android:orientation="vertical"
         android:layout_margin="@dimen/TextView_margin"
         android:padding="@dimen/TextView_padding"
-        android:text="@string/TryAgainMessage"
         android:textSize="@dimen/TextSize_16sp"/>
 </RelativeLayout>

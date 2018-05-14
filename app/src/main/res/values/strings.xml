@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">News1</string>
-    <string name="ErrorMessage">Error: Connection not established!</string>
-    <string name="TryAgainMessage">Try again when you have connection</string>
+    <string name="THEGUARDIAN_API">https://content.guardianapis.com/search?&amp;show-tags=contributor&amp;api-key=6f8ccc6b-3d76-4733-aeea-74e431520ca9</string>
 </resources>
